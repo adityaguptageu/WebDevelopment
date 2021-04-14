@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Swap Para</title>
+
+</head>
+
+<body>
+    <p class="p1">This is para 1.</p>
+    <p class="p2">This is para 2.</p>
+    <button onclick="swapText()">Change</button>
+
+    <script>
+        function swapText() {
+            p1 = document.getElementsByClassName('p1')[0];
+            p2 = document.getElementsByClassName('p2')[0];
+            temp = p1.textContent;
+            p1.textContent = p2.textContent;
+            p2.textContent = temp;
+        }
+    </script>
+</body>
+
+</html>
